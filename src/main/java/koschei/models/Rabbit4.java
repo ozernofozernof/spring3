@@ -6,12 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Rabbit4 {
 
-    private final Duck5 duck;
-
     @Autowired
-    public Rabbit4(Duck5 duck) {
-        this.duck = duck;
-    }
+    private Duck5 duck;
 
     @Override
     public String toString() {
